@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-23 00:31-0400\n"
+"PO-Revision-Date: 2009-07-30 03:31-0400\n"
+"Last-Translator: Sohaib Obaidi <ebtihaj_obaidi@yahoo.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fa_AF\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 1.2.1\n"
+
+#: activity/activity.info:2
+msgid "Browse"
+msgstr "جستجو"
+
+#: downloadmanager.py:160
+msgid "Download started"
+msgstr "بارگيرى پايين شروع شد"
+
+#: downloadmanager.py:173
+msgid "Download completed"
+msgstr "بارگيرى پايين تکمیل شد"
+
+#: downloadmanager.py:177
+msgid "Show in Journal"
+msgstr "در ژورنال نشان بده"
+
+#: downloadmanager.py:180
+msgid "Ok"
+msgstr "درست است"
+
+#: downloadmanager.py:187
+#, python-format
+msgid "From: %s"
+msgstr ""
+
+#: downloadmanager.py:316
+#, python-format
+msgid ""
+"Downloading %s from \n"
+"%s."
+msgstr "در حال بارگيرى پايين %s از/n%s."
+
+#: edittoolbar.py:92
+#, fuzzy
+msgid "Previous"
+msgstr "قبلی"
+
+# <span class="translation-space"> </span>
+# بعدی
+#: edittoolbar.py:99
+#, fuzzy
+msgid "Next"
+msgstr "بعدی"
+
+#: linkbutton.py:95
+msgid "Remove"
+msgstr "حذف کردن"
+
+#: palettes.py:142
+msgid "Keep link"
+msgstr ""
+
+#: palettes.py:150
+msgid "Copy link"
+msgstr ""
+
+#: palettes.py:158
+msgid "Follow link"
+msgstr "پیوند را تعقیب کن"
+
+#: palettes.py:208
+msgid "Keep image"
+msgstr ""
+
+#: palettes.py:216
+msgid "Copy image"
+msgstr ""
+
+#: viewtoolbar.py:34
+msgid "Zoom out"
+msgstr "نمایش به شکل دور"
+
+#: viewtoolbar.py:40
+msgid "Zoom in"
+msgstr "نمایش به شکل نزدیک"
+
+#: viewtoolbar.py:51
+msgid "Fullscreen"
+msgstr "صفحه کامل"
+
+#: viewtoolbar.py:89
+msgid "Show Tray"
+msgstr "طبق را نشان بده"
+
+#: viewtoolbar.py:93
+msgid "Hide Tray"
+msgstr "طبق را پنهان کن"
+
+#: webactivity.py:598
+msgid "Download in progress"
+msgstr "در حال بارگیری پائین"
+
+#: webactivity.py:599
+msgid "Stopping now will cancel your download"
+msgstr "توقف در این لحظه بارگیری پائین شما را لغو خواهد کرد"
+
+#: webactivity.py:601
+msgid "Cancel"
+msgstr "لغو"
+
+#: webactivity.py:603 webtoolbar.py:437
+msgid "Stop"
+msgstr "توقف"
+
+#: webtoolbar.py:247
+msgid "Home page"
+msgstr ""
+
+#: webtoolbar.py:269
+msgid "Back"
+msgstr "عقب"
+
+#: webtoolbar.py:276
+msgid "Forward"
+msgstr "جلو"
+
+#: webtoolbar.py:284
+msgid "Add a tab"
+msgstr ""
+
+#: webtoolbar.py:291
+msgid "Bookmark"
+msgstr "نشانک"
+
+#: webtoolbar.py:440
+msgid "Reload"
+msgstr "اجرای دوباره"
+
+#, python-format
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#, python-format
+#~ msgid "File %s from %s."
+#~ msgstr "پرونده %s از%s."
+
+# <span class="translation-space"> </span>
+# (poterminology) /home/sayamindu/test/fa_AF/chat-activity.po (1)<br /><span class="translation-space"> </span>
+# (poterminology) /home/sayamindu/test/fa_AF/journal-activity.po (1)<br /><span class="translation-space"> </span>
+# (poterminology) /home/sayamindu/test/fa_AF/pippy-activity.po (1)<br /><span class="translation-space"> </span>
+# (poterminology) /home/sayamindu/test/fa_AF/web-activity.po (1)<br /><span class="translation-space"> </span>
+# (poterminology) /home/sayamindu/test/fa_AF/sugar-toolkit.po (1)<br /><span class="translation-space"> </span>
+# (poterminology) /home/sayamindu/test/fa_AF/record-activity.po (1)<br /><span class="translation-space"> </span>
+# (poterminology) /home/sayamindu/test/fa_AF/calculate-activity.po (1)<br /><span class="translation-space"> </span>
+# (poterminology) /home/sayamindu/test/fa_AF/oficina.po (1)
+#~ msgid "Copy"
+#~ msgstr "تکثیر"
+
+#~ msgid "Download link"
+#~ msgstr "پیوند را بار گیری کن"
+
+#~ msgid "Download image"
+#~ msgstr "تصویر را بار گیری کن"
+
+#~ msgid "Edit"
+#~ msgstr "تنظیم کردن"
+
+#~ msgid "View"
+#~ msgstr "نمایش"
+
+#~ msgid "blank"
+#~ msgstr "خالی"
+
+#~ msgid "Source"
+#~ msgstr "منبع"
+
+#~ msgid "Open"
+#~ msgstr "باز کن"
+
+#, python-format
+#~ msgid ""
+#~ "File %s downloaded from\n"
+#~ "%s."
+#~ msgstr "فایل %s بارگيرى پايين شد از/n%s."

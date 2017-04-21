@@ -1,0 +1,6 @@
+[Activity]
+name = WikipediaGN
+activity_version = 33.4
+bundle_id = org.laptop.WikipediaGNActivity
+icon = activity-wikipedia-gn
+exec = sugar-activity activity_gn.WikipediaActivityGN

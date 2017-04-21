@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-23 00:31-0400\n"
+"PO-Revision-Date: 2010-01-21 20:04+0200\n"
+"Last-Translator: jon <joni-ber_rock@hotmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.1\n"
+
+#: activity/activity.info:2
+msgid "Browse"
+msgstr "Shfleto"
+
+#: downloadmanager.py:160
+msgid "Download started"
+msgstr "Shkarkimi ka filluar"
+
+#: downloadmanager.py:173
+msgid "Download completed"
+msgstr "Shkarkimi ka përfunduar"
+
+#: downloadmanager.py:177
+msgid "Show in Journal"
+msgstr "Trego në Ditar"
+
+#: downloadmanager.py:180
+msgid "Ok"
+msgstr "Në Rregull"
+
+#: downloadmanager.py:187
+#, python-format
+msgid "From: %s"
+msgstr "Prej: %s"
+
+#: downloadmanager.py:316
+#, python-format
+msgid ""
+"Downloading %s from \n"
+"%s."
+msgstr ""
+"Duke shkarkuar %s nga \n"
+"%s."
+
+#: edittoolbar.py:92
+msgid "Previous"
+msgstr "I Mëparshmi"
+
+#: edittoolbar.py:99
+msgid "Next"
+msgstr "Tjetra"
+
+#: linkbutton.py:95
+msgid "Remove"
+msgstr "Fshi"
+
+#: palettes.py:142
+msgid "Keep link"
+msgstr "Mbani lidhjen"
+
+#: palettes.py:150
+msgid "Copy link"
+msgstr "Kopjo lidhjen"
+
+#: palettes.py:158
+msgid "Follow link"
+msgstr "Ndiq lidhjen"
+
+#: palettes.py:208
+msgid "Keep image"
+msgstr "Mbaje figurën"
+
+#: palettes.py:216
+msgid "Copy image"
+msgstr "Kopjo figurën"
+
+#: viewtoolbar.py:34
+msgid "Zoom out"
+msgstr "Zvoglo"
+
+#: viewtoolbar.py:40
+msgid "Zoom in"
+msgstr "Zmadho"
+
+#: viewtoolbar.py:51
+msgid "Fullscreen"
+msgstr "Ekran të plot"
+
+#: viewtoolbar.py:89
+msgid "Show Tray"
+msgstr "Shfaqe shportën"
+
+#: viewtoolbar.py:93
+msgid "Hide Tray"
+msgstr "Fsheh shportën"
+
+#: webactivity.py:598
+msgid "Download in progress"
+msgstr "Shkarkimi në progres"
+
+#: webactivity.py:599
+msgid "Stopping now will cancel your download"
+msgstr "Nëse e ndalni tani shkarkimi do të anulohet"
+
+#: webactivity.py:601
+msgid "Cancel"
+msgstr "Anulo"
+
+#: webactivity.py:603 webtoolbar.py:437
+msgid "Stop"
+msgstr "Ndal"
+
+#: webtoolbar.py:247
+msgid "Home page"
+msgstr ""
+
+#: webtoolbar.py:269
+msgid "Back"
+msgstr "Prapa"
+
+#: webtoolbar.py:276
+msgid "Forward"
+msgstr "Përpara"
+
+#: webtoolbar.py:284
+msgid "Add a tab"
+msgstr ""
+
+#: webtoolbar.py:291
+msgid "Bookmark"
+msgstr "Shëno faqen"
+
+#: webtoolbar.py:440
+msgid "Reload"
+msgstr "Ringarko"
+
+#, python-format
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "Copy"
+#~ msgstr "Kopjo"
+
+#~ msgid "Download image"
+#~ msgstr "Shkarko imazhin"
+
+#~ msgid "Edit"
+#~ msgstr "Edito"
+
+#~ msgid "View"
+#~ msgstr "Shiko"

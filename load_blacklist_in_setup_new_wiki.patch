@@ -1,0 +1,38 @@
+diff --git a/setup_new_wiki.py b/setup_new_wiki.py
+index 0a5e829..df039fa 100755
+--- a/setup_new_wiki.py
++++ b/setup_new_wiki.py
+@@ -30,9 +30,10 @@ IGNORE_FILES = ['.gitignore', 'MANIFEST', '*.pyc', '*~', '*.bak', 'pseudo.po']
+ 
+ class WikiXOPackager(bundlebuilder.XOPackager):
+ 
+-    def __init__(self, builder, data_file):
++    def __init__(self, builder, data_file, lang):
+         bundlebuilder.XOPackager.__init__(self, builder)
+         self.data_file = data_file
++        self.lang = lang
+ 
+     def package(self):
+         bundle_zip = zipfile.ZipFile(self.package_path, 'w',
+@@ -72,6 +73,14 @@ class WikiXOPackager(bundlebuilder.XOPackager):
+                         os.path.join(self.config.bundle_root_dir,
+                             images_path, f))
+ 
++            # add the articles blacklist
++            articles_blacklist_path = os.path.join(data_path,
++                    'blacklist_%s.txt' % self.lang)
++            if os.path.exists(articles_blacklist_path):
++                bundle_zip.write(articles_blacklist_path,
++                        os.path.join(self.config.bundle_root_dir,
++                        articles_blacklist_path))
++
+         bundle_zip.close()
+ 
+     def list_files(self, base_dir, filter_directories=False):
+@@ -125,5 +134,5 @@ if __name__ == '__main__':
+         shutil.copyfile(f, 'activity/activity.info')
+ 
+     config = bundlebuilder.Config()
+-    packager = WikiXOPackager(bundlebuilder.Builder(config), data_file)
++    packager = WikiXOPackager(bundlebuilder.Builder(config), data_file, lang)
+     packager.package()

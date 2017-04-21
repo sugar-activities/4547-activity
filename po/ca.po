@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-23 00:31-0400\n"
+"PO-Revision-Date: 2009-08-24 12:14-0400\n"
+"Last-Translator: Camille Robert <camille.robert@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 1.2.1\n"
+
+#: activity/activity.info:2
+msgid "Browse"
+msgstr "Navegar"
+
+#: downloadmanager.py:160
+msgid "Download started"
+msgstr "Descàrrega començada"
+
+#: downloadmanager.py:173
+msgid "Download completed"
+msgstr "Descàrrega completa"
+
+#: downloadmanager.py:177
+msgid "Show in Journal"
+msgstr "Mostra al Diari"
+
+#: downloadmanager.py:180
+msgid "Ok"
+msgstr "D'acord"
+
+#: downloadmanager.py:187
+#, python-format
+msgid "From: %s"
+msgstr "De: %s"
+
+#: downloadmanager.py:316
+#, python-format
+msgid ""
+"Downloading %s from \n"
+"%s."
+msgstr "Descarregant %s des de %s."
+
+#: edittoolbar.py:92
+msgid "Previous"
+msgstr "Anterior"
+
+#: edittoolbar.py:99
+msgid "Next"
+msgstr "Següent"
+
+#: linkbutton.py:95
+msgid "Remove"
+msgstr "Suprimir"
+
+#: palettes.py:142
+msgid "Keep link"
+msgstr ""
+
+#: palettes.py:150
+msgid "Copy link"
+msgstr "Copiar l'enllaç"
+
+#: palettes.py:158
+msgid "Follow link"
+msgstr "Seguir l'enllaç"
+
+#: palettes.py:208
+msgid "Keep image"
+msgstr ""
+
+# "la imatge" o "l'imatge" ??
+#: palettes.py:216
+#, fuzzy
+msgid "Copy image"
+msgstr "Copiar la imatge"
+
+#: viewtoolbar.py:34
+msgid "Zoom out"
+msgstr "Reduir"
+
+#: viewtoolbar.py:40
+msgid "Zoom in"
+msgstr "Ampliar"
+
+#: viewtoolbar.py:51
+msgid "Fullscreen"
+msgstr "Pantalla completa"
+
+#: viewtoolbar.py:89
+msgid "Show Tray"
+msgstr "Mostrar safata"
+
+#: viewtoolbar.py:93
+msgid "Hide Tray"
+msgstr "Ocultar safata"
+
+#: webactivity.py:598
+msgid "Download in progress"
+msgstr "Descàrrega en procés"
+
+#: webactivity.py:599
+msgid "Stopping now will cancel your download"
+msgstr "Si l'atures ara, la descàrrega serà cancel·lada"
+
+#: webactivity.py:601
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: webactivity.py:603 webtoolbar.py:437
+msgid "Stop"
+msgstr "Atura"
+
+#: webtoolbar.py:247
+msgid "Home page"
+msgstr ""
+
+#: webtoolbar.py:269
+msgid "Back"
+msgstr "Enrere"
+
+#: webtoolbar.py:276
+msgid "Forward"
+msgstr "Endavant"
+
+#: webtoolbar.py:284
+msgid "Add a tab"
+msgstr ""
+
+#: webtoolbar.py:291
+msgid "Bookmark"
+msgstr "Adreça d'interès"
+
+#: webtoolbar.py:440
+msgid "Reload"
+msgstr "Recarrega"
+
+#, python-format
+#~ msgid "%s"
+#~ msgstr "%s"
+
+# cal veure el context
+#, python-format
+#~ msgid "File %s from %s."
+#~ msgstr "Fitxer %s des de %s."
+
+#~ msgid "View"
+#~ msgstr "Veure"
+
+#~ msgid "blank"
+#~ msgstr "en blanc"
+
+# codi font o font
+#~ msgid "Source"
+#~ msgstr "Codi font"
+
+#~ msgid "Open"
+#~ msgstr "Obert"

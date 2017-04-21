@@ -1,0 +1,10 @@
+diff a/server.py b/server.py	(rejected hunks)
+@@ -899,7 +896,7 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+         icon_buffer.height = 50
+         icon_surface = icon_buffer.get_surface()
+         surface = cairo.ImageSurface(cairo.FORMAT_RGB24, icon_buffer.width,
+-            icon_buffer.height)
++                                     icon_buffer.height)
+         context = cairo.Context(surface)
+         context.set_source_rgba(1, 1, 1, 1)
+         context.rectangle(0, 0, icon_buffer.width, icon_buffer.height)

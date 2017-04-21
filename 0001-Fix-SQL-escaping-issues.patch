@@ -1,0 +1,38 @@
+From e85aed75a14a99356b71bae575bf28820969b855 Mon Sep 17 00:00:00 2001
+From: "C. Scott Ananian" <cscott@cscott.net>
+Date: Fri, 1 Feb 2013 22:13:34 -0500
+Subject: [PATCH] Fix SQL escaping issues.
+
+---
+ dataretriever.py | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/dataretriever.py b/dataretriever.py
+index 1f84dc6..6860669 100644
+--- a/dataretriever.py
++++ b/dataretriever.py
+@@ -38,8 +38,8 @@ class DataRetriever():
+         if article_title.find('"'):
+             article_title = article_title.replace('"', '')
+ 
+-        sql = 'SELECT * from articles where title ="%s"' % article_title
+-        results = conn.execute(sql)
++        sql = 'SELECT * from articles where title=?'
++        results = conn.execute(sql, (article_title,))
+         try:
+             row = results.next()
+             num_block = row[1]
+@@ -91,8 +91,8 @@ class DataRetriever():
+     def search(self, article_title):
+         conn = sqlite3.connect(self._db_path)
+         search_word = '%' + article_title + '%'
+-        sql = "SELECT * from articles where title like'%s'" % search_word
+-        results = conn.execute(sql)
++        sql = "SELECT * from articles where title like ?"
++        results = conn.execute(sql, (search_word,))
+         row = results.next()
+         articles = []
+         try:
+-- 
+1.8.1.4
+

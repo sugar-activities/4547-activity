@@ -1,0 +1,57 @@
+From bbf056da135eb7ce03bc859a275f3010f2830d10 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Manuel=20Qui=C3=B1ones?= <manuq@laptop.org>
+Date: Tue, 15 Jan 2013 09:43:32 -0300
+Subject: [PATCH wikipedia] Improve search entry - SL #3569
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Mail-Followup-To: <sugar-devel@lists.sugarlabs.org>
+
+- Use an IconEntry with a clear button and a search icon
+- Add separator between the combo box and the search entry
+
+Signed-off-by: Manuel Quiñones <manuq@laptop.org>
+---
+ searchtoolbar.py | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+diff --git a/searchtoolbar.py b/searchtoolbar.py
+index 2253c90..19cfa00 100644
+--- a/searchtoolbar.py
++++ b/searchtoolbar.py
+@@ -19,6 +19,7 @@ from gettext import gettext as _
+ try:
+     from sugar3.graphics.toolbutton import ToolButton
+     from sugar3.graphics.toolcombobox import ToolComboBox
++    from sugar3.graphics import iconentry
+     # check first sugar3 because in os883 gi.repository is found but not sugar3
+     from gi.repository import Gtk
+ except ImportError:
+@@ -26,6 +27,7 @@ except ImportError:
+ 
+     from sugar.graphics.toolbutton import ToolButton
+     from sugar.graphics.toolcombobox import ToolComboBox
++    from sugar.graphics import iconentry
+ 
+ 
+ class SearchToolbar(Gtk.Toolbar):
+@@ -53,7 +55,15 @@ class SearchToolbar(Gtk.Toolbar):
+ 
+         self.set_providers(default_search_providers)
+ 
+-        self._entry = Gtk.Entry()
++        separator = Gtk.SeparatorToolItem()
++        separator.set_draw(False)
++        self.insert(separator, -1)
++        separator.show()
++
++        self._entry = iconentry.IconEntry()
++        self._entry.add_clear_button()
++        self._entry.set_icon_from_name(iconentry.ICON_ENTRY_PRIMARY,
++                                       'entry-search')
+         self._entry.connect('activate', self._entry_activate_cb)
+ 
+         entry_item = Gtk.ToolItem()
+-- 
+1.7.11.7
+

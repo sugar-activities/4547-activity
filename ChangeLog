@@ -1,0 +1,71 @@
+ChangeLog
+
+The different language activities, have different versions according
+to when where builded.
+In this file I summarize the changes in the process to have a log easier
+to follow than the git log.
+
+Version 33.5
+
+*Improve the selection of templates when we use the select_all option
+
+*Control the redirects in the article index
+    
+    Now we see as valids the links pointing to redirects,
+    before, many links in the pages, pointing to redirected pages
+    appear in green, when the page is included (but through a redirect)
+
+Version 33.4
+
+*Do not include blacklisted pages in the index
+
+Version 33.3
+
+* Look at the images in the language repository if is not in commons
+    
+    In the qu wikipedia, there are images uploaded to a qu namespace
+    instead of the commons namespace. In the wikisource there are not difference
+    then the code try to download it from the language space if was not posible
+    download the thumbnail or the full size image.
+
+Version 33.2
+
+* If the downloaded image is not ok, remove the file
+    
+    Wikimedia reply with a html file if the image is not found
+    or can't be scaled to the requested size. If we have this file
+    the activity will show a broken image and not try to download it.
+
+* Use the data directory name to define the language in setup_new_wiki.py
+    
+    Then now we should use "es" instead of "es_ES" for the data directory name.
+    This change do easier implement other wikis as simple_en or dialects.
+    In the case of need a es_es and another es_lat activities,
+    we will need rename the activity.info.lang name to be the same than
+    the directory used.
+
+* Identify linktype languages for links with type length 2 or 3
+    
+    Before only lenght 2 where identified, but there are language codes
+    with length 3 too.
+
+* Use the first letters in the data directory to identify the language
+    
+    Before used th first letters in the xml data file name
+    but does not work with simplewiki for example.
+
+* Recognize images in directories if don't have the xx_xx form
+    
+    Until now the data directories where ever with the form xx_xx
+    now we can use more simple directories names to enable us
+    to create for example 'fr', 'es_lat', 'en', or 'en_simple'
+    data directories.
+
+* If needed remove template content to avoid a recursion in the template expansion
+    
+    The code search in the template content the template title,
+    to check if there are a possible recursion.
+    First try to replace the title by a error string,
+    if is not possible, drop all the template content.
+    This is not the best solution, but mwlib can't manage theses cases.
+

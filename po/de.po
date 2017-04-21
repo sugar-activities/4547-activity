@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is distributed under the same license as the PACKAGE package.
+# Fabian Affolter <fab@fedoraproject.org>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: web\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-09 00:31-0400\n"
+"PO-Revision-Date: 2011-08-14 23:36+0200\n"
+"Last-Translator: Markus <m.slg@gmx.de>\n"
+"Language-Team: German <fedora-trans-de@redhat.com>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.1\n"
+"X-Poedit-Language: German\n"
+
+#: activity/activity.info:2 webactivity.py:274
+msgid "Browse"
+msgstr "Browser"
+
+#: downloadmanager.py:175
+msgid "Download started"
+msgstr "Herunterladen gestartet"
+
+#: downloadmanager.py:190
+msgid "Download completed"
+msgstr "Herunterladen abgeschlossen"
+
+#: downloadmanager.py:194
+msgid "Show in Journal"
+msgstr "Im Tagebuch anzeigen"
+
+#: downloadmanager.py:197
+msgid "Ok"
+msgstr "Ok"
+
+#: downloadmanager.py:204
+#, python-format
+msgid "From: %s"
+msgstr "Von: %s"
+
+#: downloadmanager.py:346
+msgid ""
+"Downloading %2$s from \n"
+"%1$s."
+msgstr ""
+"Lade %2$s von \n"
+"%1$s herunter."
+
+#: edittoolbar.py:92
+msgid "Previous"
+msgstr "Vorheriges"
+
+#: edittoolbar.py:99
+msgid "Next"
+msgstr "Nächstes"
+
+#: linkbutton.py:95
+msgid "Remove"
+msgstr "Entfernen"
+
+#: palettes.py:143
+msgid "Keep link"
+msgstr "Link speichern"
+
+#: palettes.py:151
+msgid "Copy link"
+msgstr "Link kopieren"
+
+#: palettes.py:159
+msgid "Follow link"
+msgstr "Link folgen"
+
+#: palettes.py:209
+msgid "Keep image"
+msgstr "Bild speichern"
+
+#: palettes.py:217
+msgid "Copy image"
+msgstr "Bild kopieren"
+
+#: viewtoolbar.py:34
+msgid "Zoom out"
+msgstr "Verkleinern"
+
+#: viewtoolbar.py:40
+msgid "Zoom in"
+msgstr "Vergrößern"
+
+#: viewtoolbar.py:51
+msgid "Fullscreen"
+msgstr "Vollbild"
+
+#: viewtoolbar.py:89
+msgid "Show Tray"
+msgstr "Ablage anzeigen"
+
+#: viewtoolbar.py:93
+msgid "Hide Tray"
+msgstr "Ablage verbergen"
+
+#: webactivity.py:271
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: webactivity.py:277
+msgid "View"
+msgstr "Ansicht"
+
+#: webactivity.py:655
+msgid "Download in progress"
+msgid_plural "Downloads in progress"
+msgstr[0] "Datei wird heruntergeladen"
+msgstr[1] "Dateien werden heruntergeladen"
+
+#: webactivity.py:658
+msgid "Stopping now will erase your download"
+msgid_plural "Stopping now will erase your downloads"
+msgstr[0] "Jetzt anhalten wird das Herunterladen einer Datei abbrechen"
+msgstr[1] "Jetzt anhalten wird das Herunterladen mehrerer Dateien abbrechen"
+
+#: webactivity.py:663
+msgid "Continue download"
+msgid_plural "Continue downloads"
+msgstr[0] "Herunterladen der Datei fortsetzen"
+msgstr[1] "Herunterladen der Dateien fortsetzen"
+
+#: webactivity.py:667 webtoolbar.py:450
+msgid "Stop"
+msgstr "Anhalten"
+
+#: webtoolbar.py:259
+msgid "Home page"
+msgstr "Startseite"
+
+#: webtoolbar.py:281
+msgid "Back"
+msgstr "Zurück"
+
+#: webtoolbar.py:288
+msgid "Forward"
+msgstr "Vor"
+
+#: webtoolbar.py:296
+msgid "Add a tab"
+msgstr "Reiter hinzufügen"
+
+#: webtoolbar.py:303
+msgid "Bookmark"
+msgstr "Lesezeichen"
+
+#: webtoolbar.py:453
+msgid "Reload"
+msgstr "Neu laden"
+
+#~ msgid "Cancel"
+#~ msgstr "Abbrechen"
+
+#, python-format
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#, python-format
+#~ msgid "File %s from %s."
+#~ msgstr "Datei %s von %s."
+
+#~ msgid "Copy"
+#~ msgstr "Kopieren"
+
+#~ msgid "Download link"
+#~ msgstr "Verweis zum Herunterladen"
+
+#~ msgid "Download image"
+#~ msgstr "Bild herunterladen"
+
+#~ msgid "blank"
+#~ msgstr "leer"
+
+#~ msgid "Source"
+#~ msgstr "Quelle"
+
+#~ msgid "Open"
+#~ msgstr "Öffnen"
+
+#, python-format
+#~ msgid ""
+#~ "File %s downloaded from\n"
+#~ "%s."
+#~ msgstr ""
+#~ "Datei %s heruntergeladen von\n"
+#~ "%s."
+
+#~ msgid ""
+#~ "Downloading %s from\n"
+#~ "%s. Progress %i%%."
+#~ msgstr ""
+#~ "Herunterladen %s von\n"
+#~ "%s. Fortschritt %i%%."
+
+#, python-format
+#~ msgid "Web Activity"
+#~ msgstr "Web-Aktivität"

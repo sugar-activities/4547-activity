@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-09 00:31-0400\n"
+"PO-Revision-Date: 2011-08-16 02:14+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.1\n"
+
+#: activity/activity.info:2 webactivity.py:274
+msgid "Browse"
+msgstr "Browse"
+
+#: downloadmanager.py:175
+msgid "Download started"
+msgstr "Download started"
+
+#: downloadmanager.py:190
+msgid "Download completed"
+msgstr "Download completed"
+
+#: downloadmanager.py:194
+msgid "Show in Journal"
+msgstr "Show in Journal"
+
+#: downloadmanager.py:197
+msgid "Ok"
+msgstr "Ok"
+
+#: downloadmanager.py:204
+#, python-format
+msgid "From: %s"
+msgstr "From: %s"
+
+#: downloadmanager.py:346
+msgid ""
+"Downloading %2$s from \n"
+"%1$s."
+msgstr ""
+"Downloading %2$s from \n"
+"%1$s."
+
+#: edittoolbar.py:92
+msgid "Previous"
+msgstr "Previous"
+
+#: edittoolbar.py:99
+msgid "Next"
+msgstr "Next"
+
+#: linkbutton.py:95
+msgid "Remove"
+msgstr "Remove"
+
+#: palettes.py:143
+msgid "Keep link"
+msgstr "Keep link"
+
+#: palettes.py:151
+msgid "Copy link"
+msgstr "Copy link"
+
+#: palettes.py:159
+msgid "Follow link"
+msgstr "Follow link"
+
+#: palettes.py:209
+msgid "Keep image"
+msgstr "Keep image"
+
+#: palettes.py:217
+msgid "Copy image"
+msgstr "Copy image"
+
+#: viewtoolbar.py:34
+msgid "Zoom out"
+msgstr "Zoom out"
+
+#: viewtoolbar.py:40
+msgid "Zoom in"
+msgstr "Zoom in"
+
+#: viewtoolbar.py:51
+msgid "Fullscreen"
+msgstr "Fullscreen"
+
+#: viewtoolbar.py:89
+msgid "Show Tray"
+msgstr "Show Tray"
+
+#: viewtoolbar.py:93
+msgid "Hide Tray"
+msgstr "Hide Tray"
+
+#: webactivity.py:271
+msgid "Edit"
+msgstr "Edit"
+
+#: webactivity.py:277
+msgid "View"
+msgstr "View"
+
+#: webactivity.py:655
+msgid "Download in progress"
+msgid_plural "Downloads in progress"
+msgstr[0] "Download in progress"
+msgstr[1] "Downloads in progress"
+
+#: webactivity.py:658
+msgid "Stopping now will erase your download"
+msgid_plural "Stopping now will erase your downloads"
+msgstr[0] "Stopping now will erase your download"
+msgstr[1] "Stopping now will erase your downloads"
+
+#: webactivity.py:663
+msgid "Continue download"
+msgid_plural "Continue downloads"
+msgstr[0] "Continue download"
+msgstr[1] "Continue downloads"
+
+#: webactivity.py:667 webtoolbar.py:450
+msgid "Stop"
+msgstr "Stop"
+
+#: webtoolbar.py:259
+msgid "Home page"
+msgstr "Home page"
+
+#: webtoolbar.py:281
+msgid "Back"
+msgstr "Back"
+
+#: webtoolbar.py:288
+msgid "Forward"
+msgstr "Forward"
+
+#: webtoolbar.py:296
+msgid "Add a tab"
+msgstr "Add a tab"
+
+#: webtoolbar.py:303
+msgid "Bookmark"
+msgstr "Bookmark"
+
+#: webtoolbar.py:453
+msgid "Reload"
+msgstr "Reload"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancel"

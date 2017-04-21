@@ -1,0 +1,6 @@
+[Activity]
+name = WikipediaRW
+activity_version = 33.3
+bundle_id = org.laptop.WikipediaActivityRW
+icon = activity-wikipedia-rw
+exec = sugar-activity activity_rw.WikipediaActivityRW

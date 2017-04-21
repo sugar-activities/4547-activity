@@ -1,0 +1,424 @@
+From a71e82700dc47f4305c3d22eff75bdc89af65517 Mon Sep 17 00:00:00 2001
+From: Gonzalo Odiard <godiard@gmail.com>
+Date: Fri, 9 Aug 2013 10:25:42 -0300
+Subject: [PATCH 2/2] Pep8 & pyflakes fixes on server.py
+
+Signed-off-by: Gonzalo Odiard <gonzalo@laptop.org>
+---
+ server.py | 140 +++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 70 insertions(+), 70 deletions(-)
+
+diff --git a/server.py b/server.py
+index 84631ea..e8fcb41 100755
+--- a/server.py
++++ b/server.py
+@@ -32,7 +32,6 @@ import codecs
+ import BaseHTTPServer
+ from SimpleHTTPServer import SimpleHTTPRequestHandler
+ import SocketServer
+-import socket
+ 
+ import cgi
+ import errno
+@@ -61,13 +60,13 @@ from sugar3 import profile
+ _root_path = os.path.dirname(__file__)
+ # linux32_27" for Linux 32bits Python 2.7
+ system_id = "%s%s" % (platform.system().lower(),
+-                          platform.architecture()[0][0:2])
++                      platform.architecture()[0][0:2])
+ if platform.processor().startswith('arm'):
+     system_id = platform.processor()
+ 
+ platform_dir = "%s_%s%s" % (system_id,
+-                          sys.version_info[0],   # major
+-                          sys.version_info[1])   # minor
++                            sys.version_info[0],   # major
++                            sys.version_info[1])   # minor
+ 
+ sys.path.append(os.path.join(_root_path, 'binarylibs', platform_dir))
+ 
+@@ -119,7 +118,7 @@ class WPWikiDB:
+         self.templateprefix = templateprefix
+         self.templateblacklist = templateblacklist
+         self.dataretriever = dataretriever.DataRetriever(system_id, path)
+-        self.templates_cache = {'!' : '|', u'!': '|'}  # a special case
++        self.templates_cache = {'!': '|', u'!': '|'}  # a special case
+ 
+     def getRawArticle(self, title, followRedirects=True):
+ 
+@@ -128,7 +127,7 @@ class WPWikiDB:
+             return ''
+ 
+         article_text = \
+-                self.dataretriever.get_text_article(title).decode('utf-8')
++            self.dataretriever.get_text_article(title).decode('utf-8')
+ 
+         # Stripping leading & trailing whitespace fixes template expansion.
+         article_text = article_text.lstrip()
+@@ -153,21 +152,21 @@ class WPWikiDB:
+                     end_noinclude = lower_content.find('</noinclude>')
+                     content = template_content[:start_noinclude]
+                     if end_noinclude > -1:
+-                        content = content + template_content[end_noinclude + \
+-                                len('</noinclude>'):]
++                        content = content + template_content[
++                            end_noinclude + len('</noinclude>'):]
+                     template_content = content
+                     lower_content = template_content.lower()
+                     start_noinclude = lower_content.find('<noinclude>')
+ 
+-                if re.search('{{' + template_name, template_content, \
+-                    re.IGNORECASE) is not None:
++                if re.search('{{' + template_name, template_content,
++                             re.IGNORECASE) is not None:
+                     logging.error("Found recursion template %s" % title)
+                     template_content = re.sub(template_name, '_not_found_',
+-                            template_content, re.IGNORECASE)
++                                              template_content, re.IGNORECASE)
+ 
+                     # Search again
+-                    if re.search('{{' + template_name, template_content, \
+-                        re.IGNORECASE) is not None:
++                    if re.search('{{' + template_name, template_content,
++                                 re.IGNORECASE) is not None:
+                         template_content = ''
+ 
+             except:
+@@ -177,10 +176,11 @@ class WPWikiDB:
+             return template_content
+ 
+     def expandArticle(self, article_text, title):
+-        template_expander = expander.Expander(article_text, pagename=title,
+-                wikidb=self, lang=self.lang,
+-                templateprefix=self.templateprefix,
+-                templateblacklist=self.templateblacklist)
++        template_expander = expander.Expander(
++            article_text, pagename=title,
++            wikidb=self, lang=self.lang,
++            templateprefix=self.templateprefix,
++            templateblacklist=self.templateblacklist)
+         expanded_article = template_expander.expandTemplates()
+ 
+         return expanded_article
+@@ -215,10 +215,10 @@ class WPImageDB:
+         hashed_name = self.hashpath(name).encode('utf8')
+         if size is not None:
+             file_name = self.basepath + self.hashpath_dir(name) + '/' + \
+-                    ('%dpx-' % size) + name.replace(' ', '_')
++                ('%dpx-' % size) + name.replace(' ', '_')
+         else:
+             file_name = self.basepath + self.hashpath_dir(name) + '/' + \
+-                    name.replace(' ', '_')
++                name.replace(' ', '_')
+ 
+         if os.path.exists(file_name):
+             url = '/' + file_name
+@@ -282,7 +282,7 @@ class WPHTMLWriter(mwlib.htmlwriter.HTMLWriter):
+ 
+         math_renderer = WPMathRenderer(self)
+         mwlib.htmlwriter.HTMLWriter.__init__(self, wfile, images,
+-                math_renderer=math_renderer)
++                                             math_renderer=math_renderer)
+ 
+     def writeLink(self, obj):
+         if obj.target is None:
+@@ -330,7 +330,6 @@ class WPHTMLWriter(mwlib.htmlwriter.HTMLWriter):
+         width = obj.width
+         height = obj.height
+ 
+-        is_svg = re.match(r'.*\.svg$', obj.target, re.IGNORECASE)
+         is_thumb = obj.thumb or obj.frame or (self.gallerylevel > 0)
+ 
+         if (width or height) or is_thumb:
+@@ -339,11 +338,9 @@ class WPHTMLWriter(mwlib.htmlwriter.HTMLWriter):
+                 max_length = 180
+             if self.gallerylevel > 0:
+                 max_length = 120
+-            path = self.images.getPath(obj.target, size=max_length)
+             url_thumb = self.images.getURL(obj.target, size=max_length)
+             url = self.images.getURL(obj.target)
+         else:
+-            path = self.images.getPath(obj.target)
+             url_thumb = self.images.getURL(obj.target)
+             url = url_thumb
+ 
+@@ -388,8 +385,8 @@ class WPHTMLWriter(mwlib.htmlwriter.HTMLWriter):
+                 attr += 'width="%d" ' % width
+ 
+             img = '<%(tag)s %(ref)s="%(url)s" longdesc="%(cap)s" %(att)s>' % \
+-               {'tag': tag, 'ref': ref, 'url': url_thumb, 'cap': caption,
+-                'att': attr} + '</%(tag)s>' % {'tag': tag}
++                {'tag': tag, 'ref': ref, 'url': url_thumb, 'cap': caption,
++                 'att': attr} + '</%(tag)s>' % {'tag': tag}
+ 
+             center = False
+             if align == 'center':
+@@ -401,14 +398,14 @@ class WPHTMLWriter(mwlib.htmlwriter.HTMLWriter):
+ 
+             if self.gallerylevel > 0:
+                 self.out.write('<div class="gallerybox" ' +
+-                        'style="width: 155px;">')
++                               'style="width: 155px;">')
+ 
+                 self.out.write('<div class="thumb" ' +
+-                        'style="padding: 13px 0; width: 150px;">')
++                               'style="padding: 13px 0; width: 150px;">')
+                 self.out.write('<div style="margin-left: auto; ' +
+-                        'margin-right: auto; width: 120px;">')
++                               'margin-right: auto; width: 120px;">')
+                 self.out.write('<a href="%s" class="image" title="%s">' %
+-                        (url, caption))
++                               (url, caption))
+                 self.out.write(img)
+                 self.out.write('</a>')
+                 self.out.write('</div>')
+@@ -436,9 +433,9 @@ class WPHTMLWriter(mwlib.htmlwriter.HTMLWriter):
+                     self.out.write('<div class="thumbcaption">')
+                     self.out.write('<div class="magnify" style="float:right">')
+                     self.out.write('<a href="%s" class="internal" ' % url +
+-                            'title="Enlarge">')
++                                   'title="Enlarge">')
+                     self.out.write('<img src="/static/magnify-clip.png">' +
+-                            '</img>')
++                                   '</img>')
+                     self.out.write('</a>')
+                     self.out.write('</div>')
+                     for x in obj.children:
+@@ -475,7 +472,7 @@ class WPHTMLWriter(mwlib.htmlwriter.HTMLWriter):
+     def writeTagNode(self, t):
+         if t.caption == 'gallery':
+             self.out.write('<table class="gallery" cellspacing="0" ' +
+-                    'cellpadding="0">')
++                           'cellpadding="0">')
+ 
+             self.gallerylevel += 1
+ 
+@@ -498,8 +495,9 @@ class WPHTMLWriter(mwlib.htmlwriter.HTMLWriter):
+ 
+ 
+ class WikiRequestHandler(SimpleHTTPRequestHandler):
++
+     def __init__(self, wikidb, conf, links_cache, request, client_address,
+-            server):
++                 server):
+         # pullcord is currently offline
+         # self.reporturl = 'pullcord.laptop.org:8000'
+         self.reporturl = False
+@@ -548,7 +546,7 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+ 
+         # Pass ?noexpand=1 in the url to disable template expansion.
+         if not self.params.get('noexpand', 0) \
+-               and not self.params.get('edit', 0):
++                and not self.params.get('edit', 0):
+             article_text = self.wikidb.expandArticle(article_text, title)
+ 
+         return article_text
+@@ -561,7 +559,7 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+ 
+         imagedb = WPImageDB(self.base_path + '/images/')
+         writer = WPHTMLWriter(self.wikidb.dataretriever, htmlout,
+-                images=imagedb, lang=self.lang)
++                              images=imagedb, lang=self.lang)
+         writer.write(wiki_parsed)
+         self.links_cache[title] = writer.links_list
+         return writer.math_processed
+@@ -580,8 +578,8 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+         if article_text == "":
+             self.send_response(301)
+             self.send_header("Location",
+-                            'http://' + self.lang + '.wikipedia.org/wiki/' +
+-                            title.encode('utf8'))
++                             'http://' + self.lang + '.wikipedia.org/wiki/' +
++                             title.encode('utf8'))
+             self.end_headers()
+             return
+ 
+@@ -618,11 +616,11 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+             htmlout.write("<title>%s</title>" % title.encode('utf8'))
+ 
+             htmlout.write("<style type='text/css' media='screen, projection'>"
+-                             "@import '/static/common.css';"\
+-                             "@import '/static/monobook.css';"\
+-                             "@import '/static/styles.css';"\
+-                             "@import '/static/shared.css';"\
+-                             "</style>")
++                          "@import '/static/common.css';"
++                          "@import '/static/monobook.css';"
++                          "@import '/static/styles.css';"
++                          "@import '/static/shared.css';"
++                          "</style>")
+ 
+             htmlout.write("</head>")
+ 
+@@ -641,24 +639,24 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+                 htmlout.write('href="http://%s/render?q=' % self.reporturl)
+                 htmlout.write(title)
+                 htmlout.write('">Haz clic aquí si esta página contiene ' +
+-                        'errores de presentación</a> ')
++                              'errores de presentación</a> ')
+ 
+                 # Report inappropriate content.
+                 htmlout.write(' &middot; <a class="offsite" ')
+                 htmlout.write('href="http://%s/report?q=' % self.reporturl)
+                 htmlout.write(title)
+                 htmlout.write('">Esta página contiene material inapropiado' +
+-                        '</a>')
++                              '</a>')
+ 
+             if self.editdir:
+                 htmlout.write(' &middot; <a ')
+                 htmlout.write('href="http://%s:%s/wiki/' % (self.ip,
+-                        self.port))
++                                                            self.port))
+                 htmlout.write(title)
+                 htmlout.write('?edit=true">[ Editar ]</a>')
+                 htmlout.write(' &middot; <a ')
+                 htmlout.write('href="http://%s:%s/wiki/' % (self.ip,
+-                        self.port))
++                                                            self.port))
+                 htmlout.write(title)
+                 htmlout.write('?edit=true">[ Vista OK ]</a>')
+             if self.giturl:
+@@ -681,14 +679,14 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+                 htmlout.write('    "HTML-CSS": {')
+                 htmlout.write('      availableFonts:[],')
+                 htmlout.write('      styles: {".MathJax_Preview": ' +
+-                        '{visibility: "hidden"}}')
++                              '{visibility: "hidden"}}')
+                 htmlout.write('    }')
+                 htmlout.write('  });')
+                 htmlout.write('</script>')
+ 
+                 htmlout.write("<script type='text/javascript' " +
+-                    "src='http://%s:%s/static/MathJax/MathJax.js'>" %
+-                    (self.ip, self.port) + "</script>")
++                              "src='http://%s:%s/static/MathJax/MathJax.js'>"
++                              % (self.ip, self.port) + "</script>")
+ 
+             # validate links
+             self.write_process_links_js(htmlout, title)
+@@ -710,17 +708,17 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+         htmlout.write("<script type='text/javascript'>\n")
+         htmlout.write("  xmlhttp=new XMLHttpRequest();\n")
+         htmlout.write("  xmlhttp.onreadystatechange=function() {\n")
+-        htmlout.write("    if (xmlhttp.readyState==4 && " \
+-                                            "xmlhttp.status==200) {\n")
++        htmlout.write("    if (xmlhttp.readyState==4 && "
++                      "xmlhttp.status==200) {\n")
+         htmlout.write("      external_links = eval(xmlhttp.responseText);\n")
+-        htmlout.write("      for (var i = 0; i < document.links.length;" \
+-                                                                "i++) {\n")
++        htmlout.write("      for (var i = 0; i < document.links.length;"
++                      "                                          i++) {\n")
+         htmlout.write("        link_url = document.links[i].href;\n")
+         htmlout.write("        last_bar = link_url.lastIndexOf('/');\n")
+         htmlout.write("        loc_article = link_url.substr(last_bar+1);\n")
+         htmlout.write("        external = false;\n")
+-        htmlout.write("        for (var j = 0; j < external_links.length;" \
+-                                                                "j++) {\n")
++        htmlout.write("        for (var j = 0; j < external_links.length;"
++                      "             j++) {\n")
+         htmlout.write("          external_link = external_links[j]\n")
+ 
+         htmlout.write("          if (loc_article == external_link) {\n")
+@@ -728,8 +726,8 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+         htmlout.write("        }\n")
+         htmlout.write("        if (external) {\n")
+         link_baseurl = 'http://' + self.lang + '.wikipedia.org/wiki/'
+-        htmlout.write(("           href = '%s'" % link_baseurl) + \
+-                "+ external_links[j];\n")
++        htmlout.write(("           href = '%s'" % link_baseurl) +
++                      "+ external_links[j];\n")
+         htmlout.write("           document.links[i].href = href;\n")
+         htmlout.write("           document.links[i].className = 'offsite';\n")
+         htmlout.write("        }\n")
+@@ -801,12 +799,11 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+         self.end_headers()
+ 
+     def _save_page(self, title):
+-        formdata = cgi.FieldStorage(fp=self.rfile,
++        formdata = cgi.FieldStorage(
++            fp=self.rfile,
+             headers=self.headers, environ={'REQUEST_METHOD': 'POST'},
+             keep_blank_values=1)
+ 
+-        user = formdata.getfirst('user')
+-        comment = formdata.getfirst('comment')
+         wmcontent = formdata.getfirst('wmcontent')
+ 
+         # fix newlines
+@@ -851,7 +848,7 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+                          + (self.resultstitle % title.encode('utf8'))
+                          + "</title></head>")
+ 
+-        self.wfile.write("<style type='text/css' media='screen, projection'>"\
++        self.wfile.write("<style type='text/css' media='screen, projection'>"
+                          "@import '/static/monobook.css';</style>")
+ 
+         self.wfile.write("</head>")
+@@ -883,7 +880,7 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+         else:
+             # If not, redirect to wikimedia.
+             redirect_url = "http://upload.wikimedia.org/wikipedia/commons/%s" \
+-                         % path.encode('utf8')
++                % path.encode('utf8')
+             self.send_response(301)
+             self.send_header("Location", redirect_url.encode('utf8'))
+             self.end_headers()
+@@ -899,7 +896,7 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+         icon_buffer.height = 50
+         icon_surface = icon_buffer.get_surface()
+         surface = cairo.ImageSurface(cairo.FORMAT_RGB24, icon_buffer.width,
+-            icon_buffer.height)
++                                     icon_buffer.height)
+         context = cairo.Context(surface)
+         context.set_source_rgba(1, 1, 1, 1)
+         context.rectangle(0, 0, icon_buffer.width, icon_buffer.height)
+@@ -927,9 +924,10 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+         elif feedtype == "report":
+             strtype = "material inapropriado"
+ 
+-        self.wfile.write("<html><title>Comentario recibido</title>" +
+-                "Gracias por reportar %s en la pagina <b>%s</b>.</html>" %
+-                (strtype, article.encode('utf8')))
++        self.wfile.write(
++            "<html><title>Comentario recibido</title>" +
++            "Gracias por reportar %s en la pagina <b>%s</b>.</html>" %
++            (strtype, article.encode('utf8')))
+ 
+     def do_GET(self):
+         real_path = urllib.unquote(self.path)
+@@ -1001,10 +999,10 @@ def run_server(confvars):
+         except:
+             logging.error("Error setting up directories:")
+             logging.debug("%s must be a writable directory" %
+-                    confvars['editdir'])
++                          confvars['editdir'])
+ 
+     blacklistpath = os.path.join(os.path.dirname(confvars['path']),
+-                               'template_blacklist')
++                                 'template_blacklist')
+     logging.debug("Reading template_blacklist %s" % blacklistpath)
+     blacklist = set()
+     if os.path.exists(blacklistpath):
+@@ -1018,13 +1016,15 @@ def run_server(confvars):
+     confvars['flang'] = os.path.basename(confvars['path'])[0:5]
+ 
+     wikidb = WPWikiDB(confvars['path'], confvars['lang'],
+-            confvars['templateprefix'], confvars['templateblacklist'])
++                      confvars['templateprefix'],
++                      confvars['templateblacklist'])
+ 
+     links_cache = pylru.lrucache(10)
+ 
+     confvars['xocolor'] = profile.get_color()
+ 
+-    httpd = MyHTTPServer(('', confvars['port']),
++    httpd = MyHTTPServer(
++        ('', confvars['port']),
+         lambda *args: WikiRequestHandler(wikidb, confvars, links_cache, *args))
+ 
+     if confvars['comandline']:
+-- 
+1.8.1.4
+

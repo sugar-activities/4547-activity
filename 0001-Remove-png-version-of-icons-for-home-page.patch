@@ -1,0 +1,291 @@
+From 1589880687835b0f2eb95fb30ba686b1a75de1aa Mon Sep 17 00:00:00 2001
+From: Gonzalo Odiard <godiard@gmail.com>
+Date: Fri, 9 Aug 2013 09:57:43 -0300
+Subject: [PATCH 1/2] Remove png version of icons for home page
+
+Now we render tthem using the svg files
+
+Signed-off-by: Gonzalo Odiard <gonzalo@laptop.org>
+---
+ static/logos/biology-medicine.png  | Bin 975 -> 0 bytes
+ static/logos/culture-society.png   | Bin 777 -> 0 bytes
+ static/logos/earth-geography.png   | Bin 1595 -> 0 bytes
+ static/logos/humanities.png        | Bin 983 -> 0 bytes
+ static/logos/mathematics-logic.png | Bin 1040 -> 0 bytes
+ static/logos/physics-chemistry.png | Bin 1135 -> 0 bytes
+ static/logos/social-sciences.png   | Bin 885 -> 0 bytes
+ static/logos/technology.png        | Bin 474 -> 0 bytes
+ static/logos/wikipedia-logo.png    | Bin 1074 -> 0 bytes
+ 9 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 static/logos/biology-medicine.png
+ delete mode 100644 static/logos/culture-society.png
+ delete mode 100644 static/logos/earth-geography.png
+ delete mode 100644 static/logos/humanities.png
+ delete mode 100644 static/logos/mathematics-logic.png
+ delete mode 100644 static/logos/physics-chemistry.png
+ delete mode 100644 static/logos/social-sciences.png
+ delete mode 100644 static/logos/technology.png
+ delete mode 100644 static/logos/wikipedia-logo.png
+
+diff --git a/static/logos/biology-medicine.png b/static/logos/biology-medicine.png
+deleted file mode 100644
+index 57bc54c8a53202d41b5613ccfb188bc3f36be476..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 975
+zcmV;=12FuFP)<h;3K|Lk000e1NJLTq002t>002t}0ssI2w=C_w0000PbVXQnQ*UN;
+zcVTj606}DLVr3vnZDD6+Qe|Oed2z{QJOBU#aY;l$RCwC#oBfUQFbu}&=^X$zfC*p&
+z*Z|mo5!iqc5EGzI02@FjfKC7#zy^IE5vj7Aq=1tUisC=e9hc+$s~_9>x~!_I&QIH4
+z=hrO}Cc;FR2oqr<OoWLr5w^kpeU&%Yhn>&o`~6;)<^5s!wjOXe943=Vn+O4LJRZSN
+z6omr&kr)Cd&vV5V{Et;1w9DnPTrT_lzS!H<YW40P{ZI@MuFYn%-|w4;A;-GiE(ZIQ
+zYv{N&*9Pz`7K`<IeL9^mc(>c(9ltRQNO-&5;JwjN2o-WwRP|uIqw}vGR=<O1@hyb5
+zXn+|}WrKmLCnqA0yv0u`q5ivZ2=!<vHsvuhghdY>jn#J%LTt0y%oYvVU@G;<gz$JY
+z8nI|VuExPoCL3%^Gg_!36S9B+z!*AXmLd;n;js}4yy^tXJ-CIC8b@xoTNXMz8rxvD
+zVI7SSF<~CRUWA^uI4X)bgn0Z^a`3|z5Y`?WvXo93s4n6VQorG}E%$UhTjJRyEtt@F
+zAOsKf+ZGds*AV9hRf9GHA$8rRA~7C}c9d6Q?wJsdQrC^m$_0;pK2$Ap(ut5xxQqd0
+zmGdn;R-zl~b3j7ci}fU7eeYd77JtF2!UJJLFQ!#qh6key4p|a95mE*wArx5JAsbrA
+zi=Pivv7dh~8x!@{!{Lx_pUvm<dK&_G@Kvxkljk{of)RExY>OIJJY`LcRcV0)JgAhG
+znc4$3K}9W<eK=k9$|h@`32hTpFB4sv3Oo?f)Y8|7vg)FDQI{IyO30F#>GSEL!Di?R
+z?rH3w5W1ov70*A|K8Rxm`piRG7@$u<b2rvuahLZ`NDG5_dd2W$tHDr&?uCKjdC{jU
+zAyuZ!ZlAtuDx1XmC)D?<1rJ`I(7CjkfHQAF0F7r-4O^@c2wB5WGwi4SVT|pNv|)?Y
+z#j?ubj__bGxL&VDU)2}m@ffc~QPj5(Y^R9GYU6oM%o9>wr82XfNyS&G?ez0SQ-`EM
+z*<4lH>-FkoE@q)nU|E)Ur7L4yji@D%F4}{B@bq0bhUjGi_^PkL+2xr2!`gHwiU!I!
+zx%pU#Lfvaq<x$ymI{oH*ZNfavvW!;aU%Q(~uWG$}kFI@$s;B=NA)T7Us*u4eO^XP#
+xD*f+TB20vdFcBugM3@K@VIoX~;qAWw0|1{MQjDVsyg>i}002ovPDHLkV1m2-!6*O#
+
+diff --git a/static/logos/culture-society.png b/static/logos/culture-society.png
+deleted file mode 100644
+index 742ffc524a2b0fed108602016e47996fabb35c1b..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 777
+zcmV+k1NQuhP)<h;3K|Lk000e1NJLTq002t>002t}0ssI2w=C_w0000PbVXQnQ*UN;
+zcVTj606}DLVr3vnZDD6+Qe|Oed2z{QJOBU!t4TybRCwC#n$JobK^(`|kn_Ai2UP5(
+z0SlfKYN>~2!GEU;{^_Yg#e1zDYy!3QQ0gIi5e028qG0UZ^Z{HS!1V#LK0x9F#2+pW
+z%WhjIGdt5w`2Lu~X4u`|e&+XQW`3ETR;%T7wd9;`7Z8FFgdhYV2tf!!5P~o&ziYLz
+z(U(vA`l)Shd}%hDcJ%hx*<0*XDm#_!XwS1k;ppU;G1d))Ybzhms?}sa=X`g6k5D_<
+zOUV_dCnlqK>*bO_3WDJ6+&p=&*#T}D6aVUJYJ6g#w=Zl%gU_jl`WubL^7|#xPpx`-
+zYVI=}b9jU#7zj1Q6SDeYB??JDJBg5N68-vx**UV?qqmV^|9D&G2)};bkT*{4{5)pr
+zdcB@qLb5>2_YMyZWc>Nni_v7bW{!~XVtGYAf9O1GiBR7TYWBB8=v`c-6-#Z!uq8st
+zw5j|;8ZXTkY7v?ka+$f*2BGP7Npd|zv0#rdnfhp2OMPA?E#&k1gXn0wQ0miHOkxR^
+z;=(LpatUH$ofQ+BHe%7<mQqJK%Nbfm{!O*=$ja`3W4qWlGc(_|zS}IfT>Cz4CPnRo
+zF?MuvEVX-92nM6uxwbN#ObW=!44$xFIC5mb|57yzwHIAi6cBzM{&@7Myi6q`dQGm9
+zol0R41S!;M$k#1Y#MI=qTTFp4^bO8=*6`jfE>cUgnn*5j^WYV~s%K$vl7&B&OGZgV
+zT&$N%g@@!hJTfBrcwSx;znAd((({Cc<&|j);VJ0C{}vzwAqYVTLJ)!wgdhYV2tf!!
+z5Q4BXB(M4WrRN!~pz0rCR3yBw2yF{U3#MR<sh#o5DHF=nDpSPU-QQCyOlzIKy!L(1
+z^KK2Fg?++#(RG#U?v_r_BA0>?gdhYV2tf!!5Q6ZZawot5U$W%({!`Lq00000NkvXX
+Hu0mjf$E0a2
+
+diff --git a/static/logos/earth-geography.png b/static/logos/earth-geography.png
+deleted file mode 100644
+index ea941aa3bc6dfd390c063e4433608ba99762336d..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1595
+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
+
+diff --git a/static/logos/humanities.png b/static/logos/humanities.png
+deleted file mode 100644
+index c1cb03ac3ab0cc653553e524de6ba11643364a4f..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 983
+zcmV;|11S87P)<h;3K|Lk000e1NJLTq002t>002t}0ssI2w=C_w0000PbVXQnQ*UN;
+zcVTj606}DLVr3vnZDD6+Qe|Oed2z{QJOBU#c}YY;RCwC#S-W!DKom6|x5mALQYYZv
+zkUog?hV+)`jr;+K)G_oyq6gB)@BuLCfgeCWAo&BxVKmv%px5rQp&)mMVKm~NyZ7wl
+z?mbIkx7%Hub-TPc_eKnfAu%L|#E=*gLt>cPmdoYW*28=4-CgD5v(*WLKsm(owlIS+
+zAZ^nCTrSjtL|r<aPSAJsO|e*9EPvxW4Kka(B1(P;_<yS1AB@7#ado|MiaG4r-FQIp
+zm(g}GBDoO!6rbdtZJ%P5VzneLFf1yCkj-YDXun>s&m`0Mevr0$|2e~2t(LfXN+nGp
+zq*AHGU&0Aoonj6R!;JUcu`E%@W9%hsPaP{hC`P({R@+In{>%4D`GZ!v#iyZvUaeNS
+z5NG&92m*sz^**!*5OBFruOtQqJHDi87*WsjiZ?gK>ubD8Tvt&DEJY#BW;1wu^S0Y^
+zxeV04-}Hs8<~+nk9}N1gGfdnhUAxz8wvLD3yiGhU_6yZ)caj#c8iwc+MM-wPe(4XQ
+z5%WM0amRYjC@11cXgvAJPf{S$U@CHtBLo*MuP}AF5V&O!JY>^DgF`^n=TgkZbTa0#
+z9JvmIxPPBHAtOF}M8bbC@-oE8aXMWt7t#>+kUQM`#f|!!MxyLs5D6^lL+)HEv@pWj
+zN&><!0+CTU(`n)C|F^i3Mxw&lZatyl6os%=plKzEYDT^;^?lzo9>a<;EE*@1v2q9u
+zSRIRx)p>#wiD+dQ+IE+9%sz|7LLme{#qHrlBHBxd%$`_eW*pWMki?(h<P-`xEj<Q-
+zuMm=U^q=AuL#VEohG?3m%9Sufq`}0rR;|_)Lh5xr@zx_-QYx!yhK_qMmgqRDfH)x#
+zd#Se`X8V8);Ba!H8{zO|b6t0{Ug7zn*@~-JB@m>R`Fw_la^=o247npwm|-ZR&@qz^
+z;o_<5dRovD5a{6fY;Vu*R8iJpRby^Nx1tzBbP3I#ma-AV&>0;>APRwH+k8wbP+<vy
+zFSHv47-q-HcGs`h`7w|$je7QxAWBjo(|qf7a}QhuhXp1L!9(te2ZwO0K9^!Ya7r6i
+zjz~Z_Z!zFD<3A5chM^`9DtaU!{3Q#&bNUbX|GC8=jZYe%G(Ks3()gtDN#m2oCyh@U
+zpEN#ceA4)&@k!&8#-}+XhQyE<5<_B042dBzJhuH2U;t$5xnJ$n$6Wvb002ovPDHLk
+FV1fe7$~XW3
+
+diff --git a/static/logos/mathematics-logic.png b/static/logos/mathematics-logic.png
+deleted file mode 100644
+index 1b5aad8b6d34363baf9a2e17640e5eb4698ea7c7..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1040
+zcmV+r1n>KaP)<h;3K|Lk000e1NJLTq002t>002t}0ssI2w=C_w0000PbVXQnQ*UN;
+zcVTj606}DLVr3vnZDD6+Qe|Oed2z{QJOBU#vPnciRCwC#o9(gjKorN5JI{AIKnITs
+zPysri0#twsP(gHn3Qz$Z&_Src{g0h{W+w^Rmy?9do)32-!|wj}yza~OACHGuYWeZX
+zE{@O<IzmV22pyp#bcAJ)e?@gXnM}^-Gkt8eTJ?JU|5KQIdK4t>b~|xA;2aDFr_+h6
+zqmLsb!58-XeHjSx0HwVG#{0|V^4)~f>6BhVX`roEt1=`$E*6WACJe)H|0kr7L_+#L
+zUPd@U{#k^Z&1O6v$8C>z-VhQeT8LOIUKUIU6=7JB={F-JyOmq(^?JHPV$1l~>vcFB
+zHX4oPa(TPmxSACa6)8k~+-|q%rGT0SRLy2{y<W#NTMz^oqD>yhZ;>8JljsGU`DJ`K
+zM%>xrDLZbHidIS@L*hZ*A%83_v(xDu4hNYHt_Z!c7hh-)&5CDu0gArNtrS%yER$+W
+z*d(kGgCL(_m)=vzRx!UB5@HtN@f1;ntE3iU_JY(;&-3{_L&AQ)Pude+_a;LyiilpM
+zMwOs#LO7ev$oHT(a*uojk%^uo(VK@5)=%bv8Aa`q^THCHk~{2nJAOhr;Q~+BIPdp6
+zxvqFP9*??X=yto}K@Q_Qgome)wWy~AEa52vi-$_3VpHhIL*gV{tyYwCBV}=(BF}7U
+z&d?x4;G%MAG#cd-JX6(}N~p0DB?m4F+4cf6^L_s#b`vQiVE(czT#6(lpQcb&s{K-!
+zyIiB$cl>7eNjE*R5hey}n~~*X>Z*iX%XYM*lBOBwMU{{;wWR{l4wjTQMJcM{0(LP<
+z5=#{`?6(rC*ATB3T$vtnFk5N<YNRM&P%3KcQ0^}uu}sApI;1ddu%fdpTy0XZ1|hYs
+zw;^jSw2(KfrL+!P=vORfmx>1=)T!ASo8F!`IXd*2523v8WOh{Q8TXfi8pAN8IW;(S
+zG9i?^gjZxuD6g}PC)Bes8^uEv<1<$3$XJ0Ugixbg-DhO0k&`By%L<-Z_e6;98SlQ(
+zB+7{)2!aCcV#p^XypT|rjAwj7f#DoKvfXAm(}}0{EWym`3^)Rbcwp=>@tYUGGq`!d
+ze-}dzt-@mQMr&mFGV~w6J;Q>>bK4~Gd<H|r`&64uyqaQj11c^)%YOxlBjLn~Tx=iL
+zYBl-z3G1)K{V04Hc+7VI7-tJQF<y*=Dplv7a_dW6i&EV4gNeePGc9p>tn}5|9HxlB
+z@f9;P2D^pA`ELZrBtyb)-A#0aj?fW0LPzKb9ibz1gayd200RJIh@_cJJH;me0000<
+KMNUMnLSTZYs@H7*
+
+diff --git a/static/logos/physics-chemistry.png b/static/logos/physics-chemistry.png
+deleted file mode 100644
+index b99d38bf4d0e02406d021099a227fd31d7c36ef0..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1135
+zcmV-#1d#iQP)<h;3K|Lk000e1NJLTq002t>002t}0ssI2w=C_w0000PbVXQnQ*UN;
+zcVTj606}DLVr3vnZDD6+Qe|Oed2z{QJOBU$5lKWrRCwC#o4az_Kp2G~<67xst?LB2
+zkHrHZr8l@Y@Bo7J5`7F0VC<etAMgVpr#GaJod*anK#si=h7l_vq+hH=w8Kz{%jnZN
+z``-k`)oN8Z>h-R0>?<eC33I}nFuR1y<<fQCmzQVxh^qwFa5&IPADQ|A&$HQVC3T&U
+zU$U#(CDdCh`RLAcT|XX|x^HXqh@vRR9BC}8r7{Lp&)6xRr_;&d35(=)X{Y0ih67zM
+zU)LM=cYP1l_sN5%Y1t;^Yd)VtH0(pqao_<m^DYIL5Ra4hx;L38giD2ZeD!)=aAsb^
+z;5U42TiGV8)@nO<>A}332%)Mn<cZ+-9L%f5<fa&3%t|l=YMsGwoZ*cB?WVW00J`hn
+zW|$DEuij|x^lH-mM}jWp5!Ey*!3;@zH7O0T1HlFp-gG5<HJOY*8Y0X<I+&0#Rjya*
+zT?$Q5vTd61wtp|ttHc@tquIFj0HcVL=v89EcFWo>+2nfl9qsn>H2CYF3i8)(SY^Sn
+z7jH{7VXxcud#R+ID~b}vtGG-lCB&KedCayQJa{<S>D7*7r!<z9^$Q`PVVJl5yG<*W
+z_0PfW)vxE@snZboU5E!~+K%Hn671FBy(*1xJRbQpidWlb3{~;)`zou|;v15xx1u3@
+zbZ5fj^?F@+95QatQE>!*#$H9ifCs7~lIbIvONG6KpXIi_3RP$B4_>LSQ_g}yMuMrn
+zFb85)Dn`Jk-jE(g!`IwUF-*o7qNpcTlqe>v1cZzElkoV3Ufw<IXtfLfhO3)Kz)Ntf
+zmJ&k0&>!;rwuh_LYRz^!R5v^*G+Zo%J1yiXLb^2`-=6`IR!*c@F8@RpkQX}q_8Xoj
+z(+65S8V%#GOinS<vvR@^OHtm3Pm-A=ER{-r6OA+w5=0u6F~3@;T4l%tF>7eX)Hn^t
+z35AB5PdN_4TDxV%ETEAjpXNVhx)iBTnA`yd0sR!-N5fd(K-1$xDB*ks1qx)09DDq(
+zodiPQ3CCpEKWHEdTVvvo%d%R$G*88x=3M(EEWvHtsW+N<DZ;=PT~++{f{d`!afA%8
+z8LCb4>5GJ##&2K&^_q?P&fhL%fDkJA%|dyDD~piw-qYqR6s=H6J4d+#a=w?=dEYa(
+z;-dhVIiX*J5#L?oDFNr|y0gW6j^-G(Tlks=A4L6t>tdKD)z+mX1j%?jf<z>vPS9Rn
+zBAZ^tOo;@9uqDcuUN@=xxG~2zaS1_X8kM9&CGZBrakPzEJo^7Voy1X(&vOsCs<qm_
+z5h$XDVQ!KoWY>Kwq=*@xcSeV|+-p>u?AL8ZBz%}oW$i1!J9)$|J!7X5g9kdY@J5ZO
+z;emf|?<s(V)4l&UTjUeroG>TM33I}naQFHvzyR}w6CdJ1?(F~o002ovPDHLkV1ns!
+BB_sd<
+
+diff --git a/static/logos/social-sciences.png b/static/logos/social-sciences.png
+deleted file mode 100644
+index d7d2c588bee52f75af5fffeb5136ce23fee09c54..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 885
+zcmV-*1B(2KP)<h;3K|Lk000e1NJLTq002t>002t}0ssI2w=C_w0000PbVXQnQ*UN;
+zcVTj606}DLVr3vnZDD6+Qe|Oed2z{QJOBU#7fD1xRCwC#oBx%;KoG~{-W8w&IzR=K
+zpadPDg6KdAs6bSJ3Qz$Z&_V9|<lVk~iHz**kAye#pOdWpWM;oJv)OB<X&QaC{Y2kx
+zLMVhnD1<^NghCiazaf9@d_F%O5B0I%@3-6Sk0(r$<aj(D4hP^BzXjoFG#U<v<MFuL
+z?RuF(>c{T)dmP6`lLqQ)wQ@caFNE9emhBLP?tZ^-E+Jfpc(aeJ*=&ZP8b^4&Uf}^(
+z%LhZ9PNxPDVm8i&5d+#oMy`U>lM>oPMo#b?2B&jK2ZT@s-$@lukS#p6giv<IjFI|q
+z<8ryw|3b$(o?|_Pyyd4d9#Z^bu|WQ;G8(ixG$H24TUTWvM-xsalhA}l4g}cZX@o1@
+zE@_4v`Gg29BiB`_IpJG80<6ihL9leg5h7-c2#b>gGhi@IF=)$5KU^P<kdXuR7}En1
+zLsbvgaD)tv(Gz!>y1o@K)6Rpri-C^T^cF-T;dZ_EpU>y@@6)_&*y*Aq=NUZ?p~?Ef
+zqbqpRhs)f>xLhtq*WYfpqVRM&o!xE+JiWMqL8S+SLCw1u6=epqhx%t1Lk27MwYY{D
+zGmhgBO7pfTgMlrR7Ck;`xyO~bk=`W;LHM@XemQmJOv?nTidc_?xn)xnm9iTFsd5H#
+zBR=Yd4kM}hA|%prF0Ey2FIUGxDiMcDFyXpfCq*yp5E-AS8<mjYNf#?p;zoAq=Y^1N
+zAk@ax%W2u{cMxrtOG4c_^g00;=9FvdY&NU{^@nuRL?i=VyKLz|PF+gZYxp)vlJ$CB
+z{A#n=*bq*qQ|5lGO^;6qATmK#o!}ZsrR9byk%9c~Vi2hxJP1qEF1bqE)f7U9X8Fpk
+z>2J9wPy5>U_+YbC;6@W7@l-73K9UfHD;Bwv*L4jg?Dcvz@6&vc384^vIbnb^TQw7+
+zAP(?~yXGj>`*$=D`+switeu$4lY7}QJW(1U6ha{kMd<6mFT+xAW}~aT!$INB2&?qS
+zfQ0i+-!9SC^8NpZx2ILlsLqc$dM6Yu6+$5tLLn4FAr!&@_9wsqEkM+qIh)vd00000
+LNkvXXu0mjf|BjW7
+
+diff --git a/static/logos/technology.png b/static/logos/technology.png
+deleted file mode 100644
+index d98abc009503d7bb7bda58a31ba1aa6794d29f68..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 474
+zcmeAS@N?(olHy`uVBq!ia0vp^-XP4u1SGfXyxj|=BuiW)N`mv#O3D+9QW+dm@{>{(
+zJaZG%Q-e|yQz{EjrrIztFxGgwIEGZ*dUGprYKwvZdqMeqR)s^Z4Q#Vqly5YcHVRg#
+z88DemV7tX2Rk3F`Lj_m!uYaHKPMvSeqxa+1wzU-{dlXs(oH!KW1ZV4IlZ!krew!!#
+zdnCq{t^0h=r<LBC+baacw3fc`)?V~McF)aS>$cBpfB)#^$C`)NH=dSA-gv9u@R((}
+z<-%)Livl<bcWU+Ss9O@(bs-bYY(*Qzo*j(SOSl(X?CA~+4UN4X=w`s<d`pF`JY?yV
+zFH2o_DbG<=lA9b8@*@4<^UswP`fqpnaU}Lse#-i|eQK52%!4ymZ9V7rbk6zDb6%C4
+zb-(|;XXBf5$<Mp0e{b5lE%&yy+UI(0|09pNHl@f#M*rpAB>whaid;=~#I&V4r=wLq
+zU-^B}qVMM9l~cSl_BgSBS~?|c#$IMYPUEr#%Q9cIL|RSImk&}bWdEceeemFtUq$CF
+w%m3v&7I@zIEb}o}2_8b=uzEP}hhPGO>Fe@3O`b`{z{q0oboFyt=akR{07<OM>;M1&
+
+diff --git a/static/logos/wikipedia-logo.png b/static/logos/wikipedia-logo.png
+deleted file mode 100644
+index 00a27f54a6de9480bac1f9e209785364aa582925..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1074
+zcmV-21kL-2P)<h;3K|Lk000e1NJLTq002t>002t}0ssI2w=C_w0000PbVXQnQ*UN;
+zcVTj606}DLVr3vnZDD6+Qe|Oed2z{QJOBU#)Ja4^RCwC#o6(ITF${*;)xCqL08s&=
+z0Yn9e3J?u|=ztO^0Xl#V=m0tZDnL{)YiXp&iXF%CM0?W8c{uHI&Wu0X`QwDUucm2w
+ze|miP{`zo2Cv-w5bV4U|LML=WCv?K!82{);&*$^?dMW4k`~Ase(*AtE-#?#^U_6`6
+z@UNH41*Wi;gTVld!;?>^6L^(%24-!y+xXLljPZE<tscYSFigxE@Avy)e7oIb<N18v
+zT0R~Ry+0I(snX4669rp{85oCO7mI~#A94a?G#UwS!G8-suU0GgGwTokz$QHohXbUD
+z#_4=M3$u2+9i4JK9#i($>oqD0_#|Zv`J7It(ZiR^C48QmA`!Nb)Lkerc@}j-AdJde
+zwxkis+GhyaWeHi5r@&iNi;51Yh+qcq%KC%tA$wW-JR!(K<gUgK8kbZdt=DUPLL&QY
+zHK_<$DU+8Xn?~?Vez+!Z@Ao@M1FVHcF?t#!s4<PZ(V!{?{&h?s4xGkbOGp#Kx|=O;
+zydOph(IgPZ8YX5PC?I4L0y3+wC>8^UK$8$$(wZVFBc!{WChE8dDM@JpaYQs4Q%1<@
+zjj%PRW(9dLtf-*RN{uNagaMlmZ6*w9Y~vE#RVEN`gUW~$6XJJdcezvx(#FN$Zitj#
+zV~PpceLRv!<z^GwI%NU@$)GV7LfWR{(^JuAQ<OmbUcJUx2<Zl(^pZVuDierX`67+6
+z5VFc4bk%Yil?lXW<sywS60&FWY~`@YH*Cd48e=3hx2d#=Qzj&Yrc`6>gtj&n>!E&8
+z;df;ljB14DHr3D-g*HPkOLYhh$6_|~a^c~oFB`$igoa~r>XK6EitsjQ(3nnyrQ3$E
+z=?k|$At*MD=}Jf&P9Y(<O^eoWs?WsFw`ojQLj5%y_7##zlh3ZPU}n~s3WT)w*o5G#
+z2X+lp2HYW-HKqcgrcK2>;UGeLhG-U!ompcl5VCp`B?KD;U$a-nVcmAom^y^=?S^o7
+zMAtAotBc0eA(Y!x+!#bMOM8YeE411jHKrP2>UIOKQhKAqCclkBNN-1tsYaN(-M}3Q
+zTWoX<L-ugII%-T!LRxZ=y?~wSb!g83vnpy#O+xnEpg9N9ZyGCVOie<z<TPrL>Q}31
+zOl88<zdVo+@@&sgOJgb%vL&avy`|rXl-~LN9w99`&3!T5Hfm{1eZuH=L!XMMXDGe%
+z{Z&G|ZD<lmw++qh>;EJS$^mP#Xf3rjPB6D_0_zjDq6*nFNChn8>^E74@zwbMdvZc2
+sbV4U|LML=WCv-w5bV4W0j~@XB02bt~=zl2G=l}o!07*qoM6N<$f;u+h<^TWy
+
+-- 
+1.8.1.4
+

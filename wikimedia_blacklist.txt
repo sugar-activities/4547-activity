@@ -1,0 +1,21 @@
+In the wikipedia there are images too explicit to kids.
+Right now, we are blacklisting the articles with these media,
+but probably we can add a blacklist to the media itself too.
+
+This is a note about the problem:
+http://larrysanger.org/2012/05/what-should-we-do-about-wikipedias-porn-problem/
+
+A decision from WikimediaFundation:
+http://wikimediafoundation.org/wiki/Resolution:Controversial_content
+
+A note in slashdot:
+http://news.slashdot.org/story/12/06/01/2119248/what-should-we-do-about-wikipedias-porn-problem
+
+And example links:
+http://en.wikipedia.org/wiki/File:Anal_Intercourse_Artwork.jpg
+http://en.wikipedia.org/w/index.php?title=Special%3ASearch&profile=images&search=forefinger&fulltext=Search
+http://commons.wikimedia.org/w/index.php?title=Category:Sexual_penetrative_use_of_cucumbers&oldid=66888173
+http://commons.wikimedia.org/w/index.php?title=Category:GIF_videos_of_male_masturbation&oldid=67780152
+http://commons.wikimedia.org/wiki/File:Sexual_intercourse_with_vaginal_lubricative_fluid.jpg
+http://rs79.vrx.net/interests/computers/net/wikiporn/
+

@@ -1,0 +1,114 @@
+"Crear uno, dos, tres... mil Wikipedias" Comandante Ernesto Wales
+
+How to Create a new wikiactivity or update a existing activity:
+
+1) Download a dump:
+
+Create a directory inside the activity and download the wikipedia dump file
+Wikipedia provide a daily xml files dump for every language. 
+This test was done with the spanish dump. 
+The file used was eswiki-20111112-pages-articles.xml.bz2 from 
+http://dumps.wikimedia.org/eswiki/20110810/
+
+The first two letters from your directry must be the language code example: es_es or en_us
+
+mkdir es_lat
+cd es_lat
+bzip2 -d eswiki-20111112-pages-articles.xml.bz2
+
+2) Process the dump file:
+
+You need edit the file tools2/config.py, and modify the variable input_xml_file_name.
+If you are creating a wikipedia in a different language to spanish,
+modify the values of the other variables.
+
+After save the config.py, you can process the dump file:
+
+../tools2/pages_parser.py
+
+This process will create the following files: 
+eswiki-20111112-pages-articles.xml.links
+eswiki-20111112-pages-articles.xml.page_templates
+eswiki-20111112-pages-articles.xml.redirects
+eswiki-20111112-pages-articles.xml.templates
+
+If you want have more information, can use the option "--debug"
+to create the files .all_pages, .blacklisted and .titles and help you 
+to research about the process.
+
+With the spanish file and a little more to 2.3M pages, this process
+takes aprox 1:30 hours
+
+3) Make a selection of pages:
+
+To create a selection of pages to be included in the wikipedia activity,
+you need create two files: favorites.txt and blacklist.txt
+The two files are a list of titles of pages.
+
+The criteria used to select the pages is: all the pages in favorites.txt
+will be included and all the pages linked from this pages too, except the pages
+in the file blacklist.txt
+
+Our wikipedia activity have a static index page (static/index*.html)
+and you can create your own index page.
+The favorites.txt have all the pages linked from the index page 
+(in the case of spanish 130 pages) and 300 pages more selected from 
+a list of most searched pages in wikipedia (http://stats.grok.se)
+
+There are not a linear relation between number of favorite pages and final
+number of pages selected, but as reference, you can use this numbers:
+
+            Favorites           Total selected pages
+                130                     15788
+                431                     45105
+                544                     63347
+
+
+The files favorites.txt and blacklist.txt should be in the same directory 
+than the .xml file
+
+To create the selection do:
+
+../tools2/make_selection.py
+
+After you have created the selection, you can look at the list of pages in the file 
+pages_selected-level-1 and modify your favorites.txt and/or blacklist.txt 
+files and rerun the process if you want modify the selection.
+
+3) Create the index
+
+../tools2/create_index.py 
+
+This process is faster and when finished you can do a basic test:
+
+../tools2/test_index.py page_title
+
+and this will show you the content in wiki format of the selected page.
+At this stage, the process will be slow, because need to search for every template
+and do all the templates substitutions.
+To have faster results we will apply templates substitutions in all the pages.  
+
+4) Optimze the data and download images:
+
+To expand the templates need go out of the data directory:
+
+cd ..
+
+./tools2/expandtemplates.py es_new/eswiki-20111112-pages-articles.xml > es_new/eswiki-20111112-pages-articles.xml.processed
+
+If you want include images in your wikipedia activity can go again to your data directory and do:
+
+cd es_lat
+../tools2/download_images.py
+
+This command will download the images included in the pages in favorites.txt
+If you want include the images in all the pages, should do: 
+
+../tools2/download_images.py --all
+
+A option --cache_dir=directory is available if you have images already downloaded
+in another directory to acelerate the process.
+
+
+5) Create your new activity:
+

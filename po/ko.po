@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-23 00:31-0400\n"
+"PO-Revision-Date: 2009-05-13 12:10-0400\n"
+"Last-Translator: Donghee Park <i4u_4ever@yahoo.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 1.2.1\n"
+
+#: activity/activity.info:2
+msgid "Browse"
+msgstr ""
+
+#: downloadmanager.py:160
+msgid "Download started"
+msgstr "다운로드 시작"
+
+#: downloadmanager.py:173
+msgid "Download completed"
+msgstr "다운로드 완료"
+
+#: downloadmanager.py:177
+msgid "Show in Journal"
+msgstr "일지 보기"
+
+#: downloadmanager.py:180
+msgid "Ok"
+msgstr "완료"
+
+#: downloadmanager.py:187
+#, python-format
+msgid "From: %s"
+msgstr ""
+
+#: downloadmanager.py:316
+#, python-format
+msgid ""
+"Downloading %s from \n"
+"%s."
+msgstr "%s 다운로드중 %s로 부터."
+
+#: edittoolbar.py:92
+msgid "Previous"
+msgstr "이전"
+
+#: edittoolbar.py:99
+msgid "Next"
+msgstr "다음"
+
+#: linkbutton.py:95
+msgid "Remove"
+msgstr "제거"
+
+#: palettes.py:142
+msgid "Keep link"
+msgstr ""
+
+#: palettes.py:150
+msgid "Copy link"
+msgstr ""
+
+#: palettes.py:158
+msgid "Follow link"
+msgstr "링크 가기"
+
+#: palettes.py:208
+msgid "Keep image"
+msgstr ""
+
+#: palettes.py:216
+msgid "Copy image"
+msgstr ""
+
+#: viewtoolbar.py:34
+msgid "Zoom out"
+msgstr "축소"
+
+#: viewtoolbar.py:40
+msgid "Zoom in"
+msgstr "확대"
+
+#: viewtoolbar.py:51
+msgid "Fullscreen"
+msgstr "전체화면"
+
+#: viewtoolbar.py:89
+msgid "Show Tray"
+msgstr "트레이 보이기"
+
+#: viewtoolbar.py:93
+msgid "Hide Tray"
+msgstr "트레이 감추기"
+
+#: webactivity.py:598
+#, fuzzy
+msgid "Download in progress"
+msgstr "Download in progress"
+
+#: webactivity.py:599
+#, fuzzy
+msgid "Stopping now will cancel your download"
+msgstr "다운로드를 멈추기"
+
+#: webactivity.py:601
+msgid "Cancel"
+msgstr "취소"
+
+#: webactivity.py:603 webtoolbar.py:437
+msgid "Stop"
+msgstr "멈춤"
+
+#: webtoolbar.py:247
+msgid "Home page"
+msgstr ""
+
+#: webtoolbar.py:269
+msgid "Back"
+msgstr "뒤로"
+
+#: webtoolbar.py:276
+msgid "Forward"
+msgstr "앞으로"
+
+#: webtoolbar.py:284
+msgid "Add a tab"
+msgstr ""
+
+#: webtoolbar.py:291
+msgid "Bookmark"
+msgstr "책갈피"
+
+#: webtoolbar.py:440
+msgid "Reload"
+msgstr "다시읽기"
+
+#, python-format
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#, python-format
+#~ msgid "File %s from %s."
+#~ msgstr "화일 %s는 %s로 부터"
+
+#~ msgid "Copy"
+#~ msgstr "복사"
+
+#~ msgid "Download link"
+#~ msgstr "링크 다운로드"
+
+#~ msgid "Download image"
+#~ msgstr "이미지 다운로드"
+
+#~ msgid "Edit"
+#~ msgstr "편집"
+
+#~ msgid "View"
+#~ msgstr "보기"
+
+#~ msgid "blank"
+#~ msgstr "빈화면"

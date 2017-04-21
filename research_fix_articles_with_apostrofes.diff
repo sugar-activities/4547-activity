@@ -1,0 +1,59 @@
+diff --git a/dataretriever.py b/dataretriever.py
+index 6860669..bb3cbd8 100644
+--- a/dataretriever.py
++++ b/dataretriever.py
+@@ -35,8 +35,8 @@ class DataRetriever():
+         article_title = normalize_title(article_title)
+         # look at the title in the index database
+         conn = sqlite3.connect(self._db_path)
+-        if article_title.find('"'):
+-            article_title = article_title.replace('"', '')
++        if article_title.find('\''):
++            article_title = article_title.replace("'", "\\\'" )
+ 
+         sql = 'SELECT * from articles where title=?'
+         results = conn.execute(sql, (article_title,))
+@@ -50,6 +50,7 @@ class DataRetriever():
+         except:
+             num_block = -1
+             position = -1
++            logging.error('Search article %s NOT FOUND', article_title)
+         conn.close()
+ 
+         if num_block == 0 and position == 0:
+@@ -183,5 +184,5 @@ class DataRetriever():
+                     break
+             output += line
+         p.stdout.close()
+-        #logging.error(output)
++        logging.error(output)
+         return output
+diff --git a/server.py b/server.py
+index 6a54592..6e69cda 100755
+--- a/server.py
++++ b/server.py
+@@ -120,7 +120,6 @@ class WPWikiDB:
+         # Retrieve article text, recursively following #redirects.
+         if title == '':
+             return ''
+-
+         article_text = \
+                 self.dataretriever.get_text_article(title).decode('utf-8')
+ 
+@@ -283,6 +282,7 @@ class WPHTMLWriter(mwlib.htmlwriter.HTMLWriter):
+             return
+ 
+         article = obj.target
++        logging.error('writeLink %s', article)
+         #print "writeLink", article, obj.caption
+         if article.startswith('#'):
+             #print "----> <a href='%s'>" % article
+@@ -292,6 +292,8 @@ class WPHTMLWriter(mwlib.htmlwriter.HTMLWriter):
+             # Parser appending '/' characters to link targets for some reason.
+             article = article.rstrip('/')
+ 
++            article = article.replace("'", '%27')
++
+             title = article
+             title = title[0].capitalize() + title[1:]
+             title = title.replace("_", " ")

@@ -1,0 +1,40 @@
+diff --git a/server.py b/server.py
+index 074acc5..943d59f 100755
+--- a/server.py
++++ b/server.py
+@@ -522,6 +522,7 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+         self.lang = conf['lang']
+         self.templateprefix = conf['templateprefix']
+         self.templateblacklist = set(conf['templateblacklist'])
++        self.articles_blacklist = conf['articles_blacklist']
+         self.wpheader = conf['wpheader']
+         self.wpfooter = conf['wpfooter']
+         self.resultstitle = conf['resultstitle']
+@@ -823,7 +824,8 @@ class WikiRequestHandler(SimpleHTTPRequestHandler):
+             results = searcher.search(query, limit=None)
+             articles = []
+             for n in range(results.scored_length()):
+-                articles.append(results[n]['title'])
++                if results[n]['title'] not in self.articles_blacklist:
++                    articles.append(results[n]['title'])
+             return articles
+ 
+     def send_image(self, path):
+@@ -930,6 +932,17 @@ def run_server(confvars):
+     confvars['lang'] = confvars['path'][0:2]
+     confvars['flang'] = os.path.basename(confvars['path'])[0:5]
+ 
++    articles_blacklist = []
++    articles_blacklistpath = os.path.join(os.path.dirname(confvars['path']),
++                               'blacklist_%s.txt' % confvars['lang'])
++    if os.path.exists(articles_blacklistpath):
++        with codecs.open(articles_blacklistpath, 'r', encoding='utf-8') as f:
++            for line in f.readlines():
++                articles_blacklist.append(line.rstrip().decode('utf8'))
++        print "Read %d blacklisted articles" % len(articles_blacklist)
++
++    confvars['articles_blacklist'] = articles_blacklist
++
+     wikidb = WPWikiDB(confvars['path'], confvars['lang'],
+             confvars['templateprefix'], confvars['templateblacklist'])
+ 
